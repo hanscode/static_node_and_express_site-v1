@@ -1,0 +1,30 @@
+{
+  "name": "node_and_express_site",
+  "version": "1.0.0",
+  "description": "A portfolio website to showcase the great projects I've built.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanscode/static_node_and_express_site-v1.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express.js",
+    "CSS",
+    "HTML",
+    "JavaScript"
+  ],
+  "author": "Hans Steffens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hanscode/static_node_and_express_site-v1/issues"
+  },
+  "homepage": "https://github.com/hanscode/static_node_and_express_site-v1#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  }
+}

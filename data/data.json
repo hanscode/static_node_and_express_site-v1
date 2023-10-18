@@ -1,0 +1,50 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "project_name": "Random Quote Generator",
+        "description": "Simple app that displays random famous quotes each time a button is clicked.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "live_link": "https://hanscode.github.io/a_random_quote_generator-v1/",
+        "github_link": "https://github.com/hanscode/a_random_quote_generator-v1",
+        "image_urls": ["/static/images/project_1-main.jpg", "/static/images/project_1-first.jpg", "/static/images/project_1-second.jpg", "/static/images/project_1-third.jpg"]
+      },
+      {
+        "id": 2,
+        "project_name": "Data Pagination and Filtering",
+        "description": "Simple app that displays a list of any number of students that contains information such as name, email, and picture. The data is paginated so that the app loads the first nine students on the page and allowing to the users to navigate between different pages of students.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "live_link": "https://hanscode.github.io/data-pagination-and-filtering-v1/",
+        "github_link": "https://github.com/hanscode/data-pagination-and-filtering-v1",
+        "image_urls": ["/static/images/project_2-main.jpg", "/static/images/project_2-first.jpg", "/static/images/project_2-second.jpg", "/static/images/project_2-third.jpg"]
+      },
+      {
+        "id": 3,
+        "project_name": "Interactive Form",
+        "description": "In this project, I've used JavaScript to enhance an interactive registration form for a fictional Full Stack conference.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "live_link": "https://hanscode.github.io/interactive-form-v3/",
+        "github_link": "https://github.com/hanscode/interactive-form-v3",
+        "image_urls": ["/static/images/project_3-main.jpg", "/static/images/project_3-first.jpg", "/static/images/project_3-second.jpg", "/static/images/project_3-third.jpg"]
+      },
+      {
+        "id": 4,
+        "project_name": "OOP Game Show App",
+        "description": "This project is about to create a browser-based, word guessing game: Phrase Hunter. Using JavaScript and OOP (Object-Oriented Programming) to select a random, hidden phrase, which a player tries to guess, by clicking letters on an onscreen keyboard.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "live_link": "https://hanscode.github.io/oop_game-v2/",
+        "github_link": "https://github.com/hanscode/oop_game-v2",
+        "image_urls": ["/static/images/project_4-main.jpg", "/static/images/project_4-first.jpg", "/static/images/project_4-second.jpg", "/static/images/project_4-third.jpg"]
+      },
+      {
+        "id": 5,
+        "project_name": "Public API Requests",
+        "description": "This project is about to build an app for a fictional company called Awesome Startup, a distributed company with remote employees working all over the world. The company needs a smart way for employees to share contact information with each other.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "live_link": "https://hanscode.github.io/public_api_request-v1/",
+        "github_link": "https://github.com/hanscode/public_api_request-v1",
+        "image_urls": ["/static/images/project_5-main.jpg", "/static/images/project_5-first.jpg", "/static/images/project_5-second.jpg", "/static/images/project_5-third.jpg"]
+      }
+    ]
+  }
+  
