@@ -25,7 +25,7 @@
         "technologies": ["HTML", "CSS", "JavaScript"],
         "live_link": "https://hanscode.github.io/interactive-form-v3/",
         "github_link": "https://github.com/hanscode/interactive-form-v3",
-        "image_urls": ["/static/images/project_3-main.jpg", "/static/images/project_3-first.jpg", "/static/images/project_3-second.jpg", "/static/images/project_3-third.jpg"]
+        "image_urls": ["/static/images/project_3-main.jpg", "/static/images/project_3-first.jpg", "/static/images/project_3-second.jpg", "/static/images/project_3-third.jpg", "/static/images/project_3-fourth.jpg"]
       },
       {
         "id": 4,
@@ -34,7 +34,7 @@
         "technologies": ["HTML", "CSS", "JavaScript"],
         "live_link": "https://hanscode.github.io/oop_game-v2/",
         "github_link": "https://github.com/hanscode/oop_game-v2",
-        "image_urls": ["/static/images/project_4-main.jpg", "/static/images/project_4-first.jpg", "/static/images/project_4-second.jpg", "/static/images/project_4-third.jpg"]
+        "image_urls": ["/static/images/project_4-main.jpg", "/static/images/project_4-first.jpg", "/static/images/project_4-second.jpg", "/static/images/project_4-third.jpg", "/static/images/project_4-fourth.jpg"]
       },
       {
         "id": 5,
