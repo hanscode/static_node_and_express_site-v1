@@ -34,6 +34,7 @@ router.get('/project/:id', (req, res, next) => {
         // Pass the project data to the 'project.pug' template
         res.render('project', { project });
     } else {
+        console.log('404 error handler called');
         const err = new Error();
           err.status = 404;
           err.message = `Oops! It looks like the project you're looking for does not exist.`
