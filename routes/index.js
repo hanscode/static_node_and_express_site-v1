@@ -17,7 +17,7 @@ router.get('/about', (req, res, next) => {
 router.get('/error', (req, res, next) => {
   
     const err = new Error();
-    err.message = `Sorry, something went wrong and the server returned a 500 internal error.`
+    err.message = `Sorry, the server returned a 500 internal error.`
     err.status = 500;
     throw err;
   });
@@ -33,7 +33,7 @@ router.get('/project/:id', (req, res, next) => {
     } else {
         const err = new Error();
           err.status = 404;
-          err.message = `Looks like the project you requested doesn't exist.`
+          err.message = `Oops! It looks like the project you're looking for does not exist.`
           next(err);
     }
 });

@@ -8,6 +8,6 @@ block content
       |  Back
     
    article.portfolio-intro
-    h1= `404 - Page Not Found`
-    p= `Oops!  It looks like the page you're looking for does not exist.`
+    h1= `${err.status} - Page Not Found`
+    p= `${err.message}`
     a(href=`/`) Go to Homepage &rarr;

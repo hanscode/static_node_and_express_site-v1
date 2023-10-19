@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 
 // Import route definitions
-const mainRoutes = require('./routes');
+const routes = require('./routes');
 
 // Static middleware for serving static files
 app.use('/static', express.static('public'));
@@ -13,14 +13,16 @@ app.use('/static', express.static('public'));
 app.set('view engine', 'pug');
 
 //Use route definitions
-app.use(mainRoutes);
+app.use('/', routes);
 
 /* ERROR HANDLERS */
 /* 404 handler to catch undefined or non-existent route requests */
+// catch 404 and forward to error handler
 app.use((req, res, next) => {
-    console.log('404 error handler called');
-    res.status(404).render('page-not-found');
-  });
+  const err = new Error('Oops! It looks like the page you are looking for does not exist.');
+  err.status = 404;
+  next(err);
+});
   
   /* Global error handler */
   app.use((err, req, res, next) => {
