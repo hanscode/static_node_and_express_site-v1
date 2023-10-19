@@ -15,7 +15,7 @@ block content
       //- Using the Pug `each` iterator to loop over the projects in the data.json file  
       each project in projects
         .cell
-          a(href=`/projects/${project.id}`)
+          a(href=`/project/${project.id}`)
             img.thumbnail(src=`/static/images/project_${project.id}-main.jpg`, alt=`${project.project_name}`)
             h5=project.project_name
 

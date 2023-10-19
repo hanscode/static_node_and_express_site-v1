@@ -27,11 +27,10 @@ app.use((req, res, next) => {
   
     /* Handle errors caught the route handlers
       - If the error status is 404:
-          * Set the response status to 404
+          * Then the response status will be set to 404
           * Render the 'page-not-found' view and pass the error object to the view
       - Else:
-          * Set the error message to the given message, or specify a general, 
-            default error message
+          * An error message will be set to the given message or the default error message
           * Set response status to the given error status OR, 
             set it to 500 by default if no error status is set
           * Render the 'error' view, passing it the error object

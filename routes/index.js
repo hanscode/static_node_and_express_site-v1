@@ -23,7 +23,7 @@ router.get('/error', (req, res, next) => {
   });
 
 /* GET individual project page. */
-router.get('/projects/:id', (req, res, next) => {
+router.get('/project/:id', (req, res, next) => {
     const projectId = req.params.id;
     const project = projects.find(({ id }) => id === +projectId); // the +projectId convert the value into a number
 
