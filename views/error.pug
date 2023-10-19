@@ -1,0 +1,16 @@
+extends layout.pug
+
+block content
+   
+   nav.nav
+    a(href='/')
+      span &larr;
+      |  Back
+    
+   article.portfolio-intro
+    h1= `Internal server error.`
+    h2= `Oops, something went wrong.`
+    .about-bio
+     p= `${err.message}`
+    h3= `Status: ${err.status}`
+    a(href=`/`) Go to Homepage &rarr;

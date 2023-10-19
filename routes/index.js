@@ -13,7 +13,16 @@ router.get('/about', (req, res, next) => {
     res.render('about');
 });
 
-/* GET project page. */
+/* GET generated error route - create and throw 500 server error */
+router.get('/error', (req, res, next) => {
+  
+    const err = new Error();
+    err.message = `Sorry, something went wrong and the server returned a 500 internal error.`
+    err.status = 500;
+    throw err;
+  });
+
+/* GET individual project page. */
 router.get('/projects/:id', (req, res, next) => {
     const projectId = req.params.id;
     const project = projects.find(({ id }) => id === +projectId); // the +projectId convert the value into a number
@@ -22,8 +31,13 @@ router.get('/projects/:id', (req, res, next) => {
         // Pass the project data to the 'project.pug' template
         res.render('project', { project });
     } else {
-        res.sendStatus(404);
+        const err = new Error();
+          err.status = 404;
+          err.message = `Looks like the project you requested doesn't exist.`
+          next(err);
     }
 });
+  
+
 
 module.exports = router;
