@@ -4,7 +4,7 @@
   "description": "A portfolio website to showcase the great projects I've built.",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",

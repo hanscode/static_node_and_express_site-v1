@@ -19,6 +19,7 @@ app.use('/', routes);
 /* 404 handler to catch undefined or non-existent route requests */
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
+  console.log('404 error handler called');
   const err = new Error('Oops! It looks like the page you are looking for does not exist.');
   err.status = 404;
   next(err);
@@ -26,7 +27,10 @@ app.use((req, res, next) => {
   
   /* Global error handler */
   app.use((err, req, res, next) => {
-  
+    
+    if (err) {
+      console.log('Global error handler called', err);
+    }
     /* Handle errors caught the route handlers
       - If the error status is 404:
           * Then the response status will be set to 404

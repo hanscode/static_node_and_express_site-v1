@@ -15,7 +15,10 @@ router.get('/about', (req, res, next) => {
 
 /* GET generated error route - create and throw 500 server error */
 router.get('/error', (req, res, next) => {
-  
+    
+    // Log out custom error handler indication
+    console.log('Custom error route called');
+    
     const err = new Error();
     err.message = `Sorry, the server returned a 500 internal error.`
     err.status = 500;
